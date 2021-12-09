@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <script>
+
+        function ThreeSixNine() {
+
+            let result = ''
+
+            for (let i = 1; i <= 100; i++) {
+                
+                // 일의 자리
+                let 일 = i % 10
+                //십의 자리 - parseInt() : 정수값으로 변환하는 메서드
+                let 십 = parseInt( i / 10 )
+
+                let 일369 = ( 일 == 3 || 일 == 6 || 일 == 9 )
+                let 십369 = ( 십 == 3 || 십 == 6 || 십 == 9 )
+                
+                // 십, 일의 자리 둘 다 3,6,9인 경우
+                if( 일369 && 십369 ) {
+                    result += '**'
+                } 
+                // 십, 일의 자리 둘 중 하나만 3,6,9인 경우
+                else if( 일369 || 십369 ) {
+                    result += '*'
+                }
+                // 그 외
+                else {
+                    result += i
+                }
+                result += '<br>'
+            }
+            document.write(result)
+        }
+
+        // 함수 호출
+        ThreeSixNine()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
