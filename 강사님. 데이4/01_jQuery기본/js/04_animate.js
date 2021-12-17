@@ -2,7 +2,7 @@
 // 문서가 준비되었을 때, 실행되는 함수
 $(function() {
 
-    /*item1*/
+    /* item1 */
     $('#item1 .hide').on('click', function() {
         $('#item1 .target-box').hide()
     })
@@ -20,22 +20,22 @@ $(function() {
     })
 
 
-     /*item2*/
+    /* item2 */
     $('#item2 .fadeIn').on('click', function() {
-        //$('#item2 .target-box').fadeIn(3000)
-        //$('#item2 .target-box').fadeIn('slow')
+        // $('#item2 .target-box').fadeIn(3000)
+        // $('#item2 .target-box').fadeIn('slow')
         $('#item2 .target-box').fadeIn()
     })
 
     $('#item2 .fadeOut').on('click', function() {
-        //$('#item2 .target-box').fadeOut(3000)
-        //$('#item2 .target-box').fadeOut('slow')
+        // $('#item2 .target-box').fadeOut(3000)
+        // $('#item2 .target-box').fadeOut('slow')
         $('#item2 .target-box').fadeOut()
     })
 
     $('#item2 .fadeToggle').on('click', function() {
-        //$('#item2 .target-box').fadeToggle(3000)
-        //$('#item2 .target-box').fadeToggle('slow')
+        // $('#item2 .target-box').fadeToggle(3000)
+        // $('#item2 .target-box').fadeToggle('slow')
         $('#item2 .target-box').fadeToggle()
     })
 
@@ -44,7 +44,7 @@ $(function() {
     })
 
 
-    /*item3*/
+    /* item3 */
     $('#item3 .slideDown').on('click', function() {
         $('#item3 .target-box').slideDown()
     })
@@ -58,18 +58,17 @@ $(function() {
     })
 
 
-
-    /*item4*/
+    /* item4 */
     let item4Clicked = 'off'
     $('#item4 .animate').on('click', function() {
 
         if( item4Clicked == 'off' ) {
-        // .animate( CSS속성, 지속시간)
-        $('#item4 .target-box').stop().animate({
-            'opacity' : '0.3',
-            'width' : '400px',
-        }, 3000)
-        item4Clicked = 'on'
+            // .animate( CSS속성, 지속시간 )
+            $('#item4 .target-box').stop().animate({
+                'opacity' : '0.3',
+                'width' : '400px',
+            }, 3000)
+            item4Clicked = 'on'
         } else {
             $('#item4 .target-box').stop().animate({
                 'opacity' : '1',
@@ -79,5 +78,7 @@ $(function() {
         }
     })
 
-   
+
+    
+
 })
