@@ -1,6 +1,6 @@
 
 .swiper {
-    width: 1000px;
+    width: 600px;
     height: 600px;
     margin: 100px auto;
 }
@@ -24,4 +24,24 @@
 .swiper-pagination-bullet-active {
     color: #fff;
     background: pink;
+}
+
+/* 네비게이션 화살표 커스텀 */
+.swiper-button-prev {
+    color: pink;
+}
+
+
+.swiper-button-prev::after {
+    font-size: 20px;
+}
+
+
+.swiper-button-next {
+    color: pink;
+}
+
+
+.swiper-button-next::after {
+    font-size: 20px;
 }

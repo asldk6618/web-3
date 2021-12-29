@@ -1,0 +1,48 @@
+@keyframes svg {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -4320px 0px;
+  }
+}
+.svg {
+  animation-duration: 3000ms;
+  animation-timing-function: steps(180);
+  /* 마지막 프레임에서 애니메이션 멈춤 */
+  animation-fill-mode: forwards;  
+  width: 4400px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+/* scrolla.js로 스크롤 영역안에 들어오면,
+.animate__aniated 클래스 추가
+-> animateion-name적용
+-> 스크롤 되었을때 애니메이션 적용 */
+.svg.animate__animated {
+  animation-name: svg;
+}
+
+/*  */
+
+@keyframes svg100 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -18000px 0px;
+  }
+}
+.svg100 {
+  animation-duration: 3000ms;
+  animation-timing-function: steps(180);
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.svg100.animate__animated {
+  animation-name: svg100;
+}
+
