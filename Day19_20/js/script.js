@@ -20,3 +20,14 @@ $(function() {
         once: false
     })
 })
+
+let scrollTop = 0
+// 스크롤 감지
+$(window).on('scroll resize', function(){
+    scrollTop = $(this).scrollTop()
+    if( scrollTop > 200) {
+            $('header').addClass('on') 
+    } else {
+            $('header').removeClass('on')
+        }s
+})
